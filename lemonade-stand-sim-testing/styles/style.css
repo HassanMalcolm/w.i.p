@@ -1,0 +1,58 @@
+body {
+    margin: 0 15% 0 15%;
+}
+
+header {
+    text-align: center;
+}
+
+header > h2 {
+    font-style: italic;
+}
+
+div.outer {
+    border: 4px solid black;
+}
+
+div.click {
+    border-bottom: 4px solid black;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+div.store {
+    display: flex;
+}
+
+div.store-title {
+    text-align: center;
+    border-bottom: 4px solid black;
+}
+
+div.buildings,
+div.upgrades {
+    display: flex;
+    flex-direction: column;
+    flex: 50%;
+    height: 50vh;
+    overflow: auto;
+}
+
+div.buildings {
+    border-right: 4px solid black;
+}
+
+.button {
+    border-bottom: 1px solid black;
+    padding: 14px 28px;
+    font-size: 1.25em;
+    cursor: pointer;
+    text-align: left;
+}
+
+.button:disabled:hover {
+    cursor: not-allowed;
+}

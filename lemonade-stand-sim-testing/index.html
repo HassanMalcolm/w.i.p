@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="styles/style.css" />
+        <script src="src/building.js"></script>
+        <script src="src/upgrade.js"></script>
+        <script src="src/swoleArms.js"></script>
+        <script src="src/main.js"></script>
+        <title>Lemonade Stand Simulator</title>
+    </head>
+    <body>
+        <header>
+            <h1>Lemonade Stand Simulator</h1>
+            <h2>
+                It's a Hot Summer Day in South Florida and You Need Ice Cream
+                Money...
+            </h2>
+        </header>
+
+        <div class="outer">
+            <div class="click">
+                <h3>Score: <span class="score" id="score">0</span></h3>
+
+                <button type="button" onclick="scorePlusPlus()">Squeeze</button>
+            </div>
+
+            <div class="store">
+                <div class="buildings">
+                    <div class="store-title">
+                        <h4>Buildings:</h4>
+                    </div>
+
+                    <button
+                        class="button"
+                        type="button"
+                        id="buyJuicer"
+                        onclick="juicer.purchase()"
+                    >
+                        Buy Juicer
+                    </button>
+
+                    <button
+                        class="button"
+                        type="button"
+                        id="buySugar"
+                        onclick="sugar.purchase()"
+                    >
+                        Buy Sugar
+                    </button>
+
+                    <button
+                        class="button"
+                        type="button"
+                        id="buyPitcher"
+                        onclick="pitcher.purchase()"
+                    >
+                        Buy Pitcher
+                    </button>
+
+                    <button
+                        class="button"
+                        type="button"
+                        id="buyWater"
+                        onclick="water.purchase()"
+                    >
+                        Buy Water
+                    </button>
+
+                    <button
+                        class="button"
+                        type="button"
+                        id="buyIce"
+                        onclick="ice.purchase()"
+                    >
+                        Buy Ice
+                    </button>
+
+                    <button
+                        class="button"
+                        type="button"
+                        id="buyStrawberries"
+                        onclick="strawberries.purchase()"
+                    >
+                        Buy Strawberries
+                    </button>
+
+                    <button
+                        class="button"
+                        type="button"
+                        id="buyRaspberries"
+                        onclick="raspberries.purchase()"
+                    >
+                        Buy Raspberries
+                    </button>
+
+                    <button
+                        class="button"
+                        type="button"
+                        id="buyPeach"
+                        onclick="peach.purchase()"
+                    >
+                        Buy Peach
+                    </button>
+                    <!-- Add more building buttons here -->
+                </div>
+                <div class="upgrades">
+                    <div class="store-title">
+                        <h4>Upgrades:</h4>
+                    </div>
+
+                    <button
+                        class="button"
+                        type="button"
+                        id="buySwoleForearmsI"
+                        onclick="swoleForearms1.purchase()"
+                    >
+                        Buy Swole Forearms
+                    </button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
